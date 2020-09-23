@@ -1,10 +1,20 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Card from '../components/Card';
 const  Home = () => {
     return (
       <>
-         <Layout>
-          this is Home
+         <Layout pageTitle="Home page sfasf sd">
+         <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </Layout>
       </>
     );

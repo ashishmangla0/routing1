@@ -1,12 +1,21 @@
+*{
+  margin-top: 0;
+  box-sizing: border-box;
+}
 
-body{
-  margin:0;
-  background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 1.25rem 2rem;
-    background: #1C3FAA;
-    
-  }
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: Roboto;
+  font-size: 0.875rem;
+   color: #2d3748;
+   margin:0;
+}
+
 .dashboard{
   display: flex;
   flex-direction: row;
@@ -68,4 +77,43 @@ ol, ul {
 
 a{
   text-decoration: none;
+}
+
+
+.card{
+  box-shadow: 0px 3px 20px #0000000b;
+  background-color: #fff;
+  border-radius: 0.375rem;
+  position: relative;
+}
+.header{
+  border-bottom: 1px solid#dee7ef;
+  position: relative;
+  display: flex;
+  margin-bottom: 1rem;
+
+}
+.header--right{
+  height: 67px;
+  z-index: 51;
+  align-items: center;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.h1, h2, h3, h4, h5, h6 {
+ 
+  font-weight: 500;
+}
+
+.dashboad__title-wrap{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.dashboad__title{
+  margin-bottom: 0;
 }

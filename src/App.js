@@ -1,7 +1,9 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Routes from "./routes";
-import test from './bgsvg.svg'
+import test from './bgsvg.svg';
+import { ReactComponent as HomeIcon} from './home.svg';
+import { ReactComponent as ChatIcon} from './chat.svg';
 function App() {
   return (
     <>
@@ -13,10 +15,18 @@ function App() {
           <nav className="dashboard__nav">
             <ul>
               <li className="dashboard__nav-item">
-                <NavLink exact to="/" activeClassName="selected" className="dashboard__nav-link">Home</NavLink>
+                <NavLink exact to="/" activeClassName="selected" className="dashboard__nav-link">
+                  <div className="dashboard__nav-icon">
+                  <HomeIcon/>
+                        Home
+                  </div>
+                </NavLink>
               </li>
               <li className="dashboard__nav-item">
-                <NavLink exact to="/about" activeClassName="selected" className="dashboard__nav-link">About</NavLink>
+                <NavLink exact to="/about" activeClassName="selected" className="dashboard__nav-link">
+                <ChatIcon/>
+                About
+                </NavLink>
               </li>
             
             </ul>

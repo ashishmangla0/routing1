@@ -1,9 +1,10 @@
-  
 import React from 'react';
 const Header  = () =>{
     return (
         <>
-            this is Header
+            <header class="header header--right">
+ad dasdasda sd
+            </header>
         </>
     )
 }
