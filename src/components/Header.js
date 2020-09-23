@@ -4,7 +4,9 @@ const Header  = () =>{
     return (
         <>
             <header className="header header--right">
+            <div className="mr-auto">
             This is right side header
+            </div>
             <Search/>
             </header>
         </>
