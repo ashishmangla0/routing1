@@ -8,5 +8,25 @@
       "Link": "About",
       "Path" : "/about",
       "Icon" : "HomeIcon"
+    },
+    {
+      "Link": "Projects",
+      "Path" : "/projects",
+      "Icon" : "HomeIcon"
+    },
+    {
+      "Link": "Tickets",
+      "Path" : "/tickets",
+      "Icon" : "HomeIcon"
+    },
+    {
+      "Link": "Members",
+      "Path" : "/members",
+      "Icon" : "HomeIcon"
+    },
+    {
+      "Link": "Contacts",
+      "Path" : "/contacts",
+      "Icon" : "HomeIcon"
     }
 ]

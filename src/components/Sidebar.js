@@ -30,16 +30,20 @@ const Sidebar = () => {
                                 <div className="dashboard__nav-icon">
                                     <HomeIcon />
                                 </div>
-                  Home
-                </NavLink>
+                                <div className="dashboard__nav-title">          
+                                    Home
+                                </div>
+                            </NavLink>
                         </li>
                         <li className="dashboard__nav-item">
                             <NavLink exact to="/about" activeClassName="selected" className="dashboard__nav-link">
                                 <div className="dashboard__nav-icon">
                                     <ChatIcon />
                                 </div>
-                About
-                </NavLink>
+                                <div className="dashboard__nav-title">
+                                    About
+                                </div>
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
