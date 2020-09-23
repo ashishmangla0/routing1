@@ -1,0 +1,12 @@
+[
+    {
+      "Link": "Home",
+      "Path" : "/",
+      "Icon" : "HomeIcon"
+    },
+    {
+      "Link": "About",
+      "Path" : "/about",
+      "Icon" : "HomeIcon"
+    }
+]

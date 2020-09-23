@@ -4,7 +4,7 @@ import Card from '../components/Card';
 const  Home = () => {
     return (
       <>
-         <Layout pageTitle="Home page sfasf sd">
+         <Layout pageTitle="Home page">
          <Card/>
             <Card/>
             <Card/>

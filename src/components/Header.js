@@ -2,8 +2,9 @@ import React from 'react';
 const Header  = () =>{
     return (
         <>
-            <header class="header header--right">
-ad dasdasda sd
+            <header className="header header--right">
+            This is right side header
+
             </header>
         </>
     )
