@@ -1,0 +1,38 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+// import { ReactComponent as ChatIcon } from '../chat.svg';
+// import { ReactComponent as HomeIcon } from '../home.svg';
+// import test from '../bgsvg.svg';
+import menuLinks from '../../staticData/menuLInks.json';
+import style from './Sidebar.module.scss';
+console.log(menuLinks);
+const Sidebar = () => {
+    return (
+        <>
+            <aside className={style.sidebar}>
+                <div className="header header--left">
+                    Left Header top content
+                </div>
+                <nav className={style.sidebar__nav}>
+                    <ul>
+                        {menuLinks.map((item) => <><li>
+                            <NavLink exact to={item.Path} activeClassName={style.sidebar__selected} className={style.sidebar__link}>
+                                <div className={style.sidebar__icon}>
+                                   
+                                </div>
+                                <div className={style.sidebar__title}>
+                                    {item.Link}
+                                </div>
+                            </NavLink>
+                        </li></>)}
+
+                       
+                       
+                    </ul>
+                </nav>
+            </aside>
+            
+        </>
+    )
+}
+export default Sidebar
