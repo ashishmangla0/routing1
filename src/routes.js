@@ -1,13 +1,9 @@
 import React from 'react';
 import About from './pages/about';
 import Home from './pages/home';
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Projets from './pages/Projects/Projects';
+import Users from './pages/Users/Users';
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 const Routes = () => {
   return (
     <>
@@ -15,14 +11,16 @@ const Routes = () => {
         <Router path="/about">
           <About />
         </Router>
-        {/* <Route path="/users">
+        <Router path="/projects">
+          <Projets />
+        </Router>
+        <Router path="/users">
           <Users />
-        </Route> */}
+        </Router>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
-
     </>
   )
 }

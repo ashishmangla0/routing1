@@ -2,31 +2,31 @@
     {
       "Link": "Home",
       "Path" : "/",
-      "Icon" : "HomeIcon"
-    },
-    {
-      "Link": "About",
-      "Path" : "/about",
-      "Icon" : "HomeIcon"
+      "Icon" : "/icons/home.svg"
     },
     {
       "Link": "Projects",
       "Path" : "/projects",
-      "Icon" : "HomeIcon"
+      "Icon" : "/icons/project.svg"
+    },
+    {
+      "Link": "Users",
+      "Path" : "/users",
+      "Icon" : "/icons/users.svg"
     },
     {
       "Link": "Tickets",
       "Path" : "/tickets",
-      "Icon" : "HomeIcon"
-    },
-    {
-      "Link": "Members",
-      "Path" : "/members",
-      "Icon" : "HomeIcon"
+      "Icon" : "/icons/ticket.svg"
     },
     {
       "Link": "Contacts",
       "Path" : "/contacts",
-      "Icon" : "HomeIcon"
+      "Icon" : "/icons/contact.svg"
+    } ,
+    {
+      "Link": "About",
+      "Path" : "/about",
+      "Icon" : "/icons/setting.svg"
     }
 ]

@@ -1,11 +1,11 @@
 import React from 'react';
-import  {ReactComponent as SearchIcon} from '../icons/search.svg';
+// import  {ReactComponent as SearchIcon} from '../icons/search.svg';
 const Search = () =>{
 return(
     <>
         <div className="search">
             <input type="text" className="search__input" />
-            <SearchIcon className="search__icon"/>
+            {/* <SearchIcon className="search__icon"/> */}
         </div>
 
         <style jsx="true">{`

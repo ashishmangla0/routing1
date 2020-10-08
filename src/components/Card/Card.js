@@ -1,17 +1,12 @@
 import React from 'react';
-import style from './Card.module.scss'
-const Card = ({children}) => {
+import style from './Card.module.scss';
+const Card = (props) => {
     return (
         <>
             <div className={style.card}>
-                        this is card
+                {props.children}
             </div>
         </>
     )
 }
 export default Card
-
-
-
-
-

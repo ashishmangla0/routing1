@@ -1,11 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import { ReactComponent as ChatIcon } from '../chat.svg';
-// import { ReactComponent as HomeIcon } from '../home.svg';
-// import test from '../bgsvg.svg';
+import { ReactSVG } from 'react-svg';
 import menuLinks from '../../staticData/menuLInks.json';
 import style from './Sidebar.module.scss';
-console.log(menuLinks);
 const Sidebar = () => {
     return (
         <>
@@ -15,23 +12,19 @@ const Sidebar = () => {
                 </div>
                 <nav className={style.sidebar__nav}>
                     <ul>
-                        {menuLinks.map((item) => <><li>
+                        {menuLinks.map((item, key) => <li key={item.Link}>
                             <NavLink exact to={item.Path} activeClassName={style.sidebar__selected} className={style.sidebar__link}>
-                                <div className={style.sidebar__icon}>
-                                   
-                                </div>
+                                
+                                <ReactSVG src={item.Icon} className={style.sidebar__icon}/>
+                                
                                 <div className={style.sidebar__title}>
                                     {item.Link}
                                 </div>
                             </NavLink>
-                        </li></>)}
-
-                       
-                       
+                        </li>)}
                     </ul>
                 </nav>
             </aside>
-            
         </>
     )
 }

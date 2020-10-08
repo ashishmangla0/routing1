@@ -3,4 +3,15 @@
     background-color: #fff;
     border-radius: 0.375rem;
     position: relative;
+    
+    &__title{
+        font-weight: 500;
+        border-bottom: 1px solid #edf2f7;
+        margin-bottom: .5rem;
+        padding-bottom: .5rem;
+    }
+    
+    &__title,&__body{
+        padding: 1rem;
+    }
 }
