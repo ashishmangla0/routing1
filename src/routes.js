@@ -3,26 +3,23 @@ import About from './pages/about';
 import Home from './pages/home';
 import Projets from './pages/Projects/Projects';
 import Users from './pages/Users/Users';
-import Error404 from './pages/Errors/404';
 import AddProject from './pages/Projects/AddProject';
-import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route,withRouter } from "react-router-dom";
 const Routes = () => {
   return (
     <>
       <Switch>
-      <Router path="/projects/addproject/">
-          <AddProject/>
-        </Router>
-        <Router path="/about/">
+        <Router path="/about/" exact={true}>
           <About />
         </Router>
-        <Router path="/projects/">
+        <Router path="/projects/" exact={true}>
           <Projets />
         </Router>
-        <Router path="/users/">
+        <Router path="/projects/addproject/" exact={true} component={withRouter(AddProject)}/>
+        <Router path="/users/" exact={true}>
           <Users />
         </Router>
-        <Route path="/">
+        <Route path="/" exact={true}>
           <Home />
         </Route>
       </Switch>

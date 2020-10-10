@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import Header from './Header';
+import Header from '../components/Header/Header';
 import PageTitle from './PageTitle/PageTitle';
 const Layout = ({ children, pageTitle }) => {
     return (
