@@ -5,9 +5,9 @@ const PageTitle = ({ children, title }) => {
     return (
         <>
             <div className={style.pagetitle}>
-                <h1 className="dashboad__title mr-auto">
+                <h2 className="dashboad__title mr-auto">
                     {title}
-                </h1>
+                </h2>
             </div>
         </>
     )

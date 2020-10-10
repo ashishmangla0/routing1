@@ -72,7 +72,7 @@ a {
   border-bottom: 1px solid#dee7ef;
   position: relative;
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   height: 67px;
   align-items: center;
 }
@@ -97,6 +97,7 @@ h6 {
 
 .dashboad__title {
   margin-bottom: 0;
+  font-size: 1.125rem;
 }
 
 .dashboard__nav-link.selected {

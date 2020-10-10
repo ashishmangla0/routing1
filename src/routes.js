@@ -3,6 +3,7 @@ import About from './pages/about';
 import Home from './pages/home';
 import Projets from './pages/Projects/Projects';
 import Users from './pages/Users/Users';
+import Error404 from './pages/Errors/404'
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 const Routes = () => {
   return (
@@ -20,6 +21,9 @@ const Routes = () => {
         <Route path="/">
           <Home />
         </Route>
+        <Route path="*">
+            <Error404 />
+          </Route>
       </Switch>
     </>
   )

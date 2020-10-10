@@ -4,37 +4,54 @@ import Grid from '../../components/Grid/Grid';
 import Card from '../../components/Card/Card';
 import CardBody from '../../components/Card/CardBody';
 import CardTitle from '../../components/Card/CardTitle';
+import Search from '../../components/Search/Search';
 const  Projects = () => {
     return (
       <>
         <Layout  pageTitle="Projects Page">
-  
-              <Grid class="grid-12">
+        <Grid>
+        <div class="page-top">
+          <a className="button">Add New Project</a>
+          <div className="page-top__results">
+          Showing 1 to 10 of 150 entries
+          </div>
+          <div className="page-top__serach">
+            <Search/>
+          </div>
+        </div>
+        <Grid class="grid-12">
                   <div className="col-4">
                     <Card>
                     <CardTitle>
-                      this is title
+                      Project 1
                     </CardTitle>
                         <CardBody>
-                          this is from card body
+                          Project 1 description
                         </CardBody>
                     </Card>
                     </div>
                     <div className="col-4">
                     <Card>
+                    <CardTitle>
+                      Project 2
+                    </CardTitle>
                         <CardBody>
-                          this is from card body
+                          Project 2 description
                         </CardBody>
                     </Card>
                     </div>
                     <div className="col-4">
                     <Card>
+                    <CardTitle>
+                      Project 3
+                    </CardTitle>
                         <CardBody>
-                          this is from card body
+                          Project 3 description
                         </CardBody>
                     </Card>
                     </div>
               </Grid>
+        </Grid>
         </Layout>
       </>
     );
