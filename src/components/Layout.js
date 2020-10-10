@@ -14,8 +14,6 @@ const Layout = ({ children, pageTitle }) => {
                     {children}
                 </main>
                 </Suspense>
-                
-                <Footer />
             </aside>
         </>
     )

@@ -5,13 +5,14 @@ import Card from '../../components/Card/Card';
 import CardBody from '../../components/Card/CardBody';
 import CardTitle from '../../components/Card/CardTitle';
 import Search from '../../components/Search/Search';
+import { Link } from 'react-router-dom';
 const  Projects = () => {
     return (
       <>
         <Layout  pageTitle="Projects Page">
         <Grid>
         <div class="page-top">
-          <a className="button">Add New Project</a>
+          <Link className="button" to="/project/addproject">Add New Project</Link>
           <div className="page-top__results">
           Showing 1 to 10 of 150 entries
           </div>

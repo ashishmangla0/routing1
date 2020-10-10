@@ -14,9 +14,7 @@ const Sidebar = () => {
                     <ul>
                         {menuLinks.map((item, key) => <li key={item.Link}>
                             <NavLink exact to={item.Path} activeClassName={style.sidebar__selected} className={style.sidebar__link}>
-                                
                                 <ReactSVG src={item.Icon} className={style.sidebar__icon}/>
-                                
                                 <div className={style.sidebar__title}>
                                     {item.Link}
                                 </div>
