@@ -5,7 +5,7 @@ import Card from '../../components/Card/Card';
 import CardBody from '../../components/Card/CardBody';
 import CardTitle from '../../components/Card/CardTitle';
 import Search from '../../components/Search/Search';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const  Projects = ({ match }) => {
     return (
       <>

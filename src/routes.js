@@ -9,16 +9,18 @@ const Routes = () => {
   return (
     <>
       <Switch>
-        <Router path="/about/" exact={true}>
+        <Route path="/about/" exact={true}>
           <About />
-        </Router>
-        <Router path="/projects/" exact={true}>
+        </Route>
+        <Route path="/projects/" exact={true}>
           <Projets />
-        </Router>
-        <Router path="/projects/addproject/" exact={true} component={withRouter(AddProject)}/>
-        <Router path="/users/" exact={true}>
+        </Route>
+        <Route path="/projects/addproject/" exact={true}>
+        <AddProject />
+        </Route>
+        <Route path="/users/" exact={true}>
           <Users />
-        </Router>
+        </Route>
         <Route path="/" exact={true}>
           <Home />
         </Route>
