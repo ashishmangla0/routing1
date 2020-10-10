@@ -11,8 +11,8 @@ const  Projects = () => {
       <>
         <Layout  pageTitle="Projects Page">
         <Grid>
-        <div class="page-top">
-          <Link className="button" to="/project/addproject">Add New Project</Link>
+        <div className="page-top">
+          <Link to="/projects/addproject/" className="button">Add New Project</Link>
           <div className="page-top__results">
           Showing 1 to 10 of 150 entries
           </div>

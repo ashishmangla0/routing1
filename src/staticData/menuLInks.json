@@ -6,27 +6,27 @@
     },
     {
       "Link": "Projects",
-      "Path" : "/projects",
+      "Path" : "/projects/",
       "Icon" : "/icons/project.svg"
     },
     {
       "Link": "Users",
-      "Path" : "/users",
+      "Path" : "/users/",
       "Icon" : "/icons/users.svg"
     },
     {
       "Link": "Tickets",
-      "Path" : "/tickets",
+      "Path" : "/tickets/",
       "Icon" : "/icons/ticket.svg"
     },
     {
       "Link": "Contacts",
-      "Path" : "/contacts",
+      "Path" : "/contacts/",
       "Icon" : "/icons/contact.svg"
     } ,
     {
       "Link": "About",
-      "Path" : "/about",
+      "Path" : "/about/",
       "Icon" : "/icons/setting.svg"
     }
 ]

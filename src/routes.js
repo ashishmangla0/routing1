@@ -10,24 +10,21 @@ const Routes = () => {
   return (
     <>
       <Switch>
-        <Router path="/about">
+      <Router path="/projects/addproject/">
+          <AddProject/>
+        </Router>
+        <Router path="/about/">
           <About />
         </Router>
-        <Router path="/projects">
+        <Router path="/projects/">
           <Projets />
         </Router>
-        <Router path="/users">
+        <Router path="/users/">
           <Users />
-        </Router>
-        <Router path="/project/addproject">
-          <AddProject/>
         </Router>
         <Route path="/">
           <Home />
         </Route>
-        <Route path="*">
-            <Error404 />
-          </Route>
       </Switch>
     </>
   )
